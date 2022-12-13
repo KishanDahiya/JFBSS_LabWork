@@ -81,10 +81,6 @@ public class Lab1AL {
 			if(choice==6) {
 				System.out.println("\nSize of ArrayList is :"+list.size());
 			}else
-			if(choice==7) {
-				System.out.println("\nSize of ArrayList is :"+list.size());
-			}
-			else
 			if(choice==0) {
 				break;
 			}
