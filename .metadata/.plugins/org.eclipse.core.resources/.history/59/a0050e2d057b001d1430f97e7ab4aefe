@@ -1,58 +1,54 @@
 package Lab1A;
 import java.util.*;
 
-public class Lab1AL {
+public class Lab1A {
 	
-	//Created the LinkedList and Returned
-	public List<Employee> create(){
-		List<Employee> l=new LinkedList<Employee>();
-		System.out.println("Created the object");
+	//Created the ArrayList and Returned
+	public List<Student> create(){
+		List<Student> l=new ArrayList<Student>();
 		return l;
 	}
 	
 	//Putting in the values
-	public List<Employee> addValues(List<Employee> l){
+	public List<Student> addValues(List<Student> l){
 		int counter,i = 0;
 		Scanner sc=new Scanner(System.in);
 		System.out.println("How many elements do you want to add : ");
 		counter = sc.nextInt();
 		while(i<counter) {
-			System.out.println("Add Elements in order Eid, Name, Department, Address "+(i+1));
-			l.add(new Employee(sc.next(),sc.next(),sc.next(),sc.next()));
+			System.out.println("Add Elements in order USN,Name, Course, College "+(i+1));
+			l.add(new Student(sc.next(),sc.next(),sc.next(),sc.next()));
 			i++;
 		}
 		return l;
 	}
 	
 	//Display elements
-	public void display(List<Employee> l) {
-		Iterator<Employee> itr1=l.iterator();
+	public void display(List<Student> l) {
+		Iterator<Student> itr1=l.iterator();
 		while(itr1.hasNext()) {
-			Employee s2=itr1.next();
-			s2.displayEmployee();
+			Student s2=itr1.next();
+			s2.displayStudent();
 		}
 	}
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		System.out.println("Created the object");
 		//Created an object to call all methods
-		Lab1AL obj=new Lab1AL();
+		Lab1A obj=new Lab1A();
 		Scanner sc=new Scanner(System.in);
 		int choice=0;
 		//Created a list to copy all elements after each operation
-		List<Employee> list=new LinkedList<Employee>();
+		List<Student> list=new ArrayList<Student>();
 		//Menu Driven
 		while(true) {
-			System.out.println("\n1.Create LinkedList\n"
+			System.out.println("\n1.Create ArrayList\n"
 					+ "2.Insert Values\n"
 					+ "3.Display Values\n"
 					+ "4.Remove Value\n"
 					+ "5.Search Value\n"
 					+ "6.Size of ArrayList\n"
-					+ "7.Add first\n"
-					+ "8.Add Last\n"
-					+ "9.Remove First\n"
-					+ "10.Remove Last\n"
 					+ "Press 0 to exit\n"
 					+ "Enter your choice : ");
 			choice=sc.nextInt();
@@ -70,22 +66,17 @@ public class Lab1AL {
 				list.remove(sc.next());
 			}else
 			if(choice==5) {
-				
 				System.out.println("\nEnter the value to search :");
+				for(Student st:list)
 				if(list.contains(sc.next())) {
 					System.out.println("\nYes found!!!");
 				}else {
 					System.out.println("\nNot found!!!");
-
 				}
 			}else
 			if(choice==6) {
 				System.out.println("\nSize of ArrayList is :"+list.size());
 			}else
-			if(choice==7) {
-				System.out.println("\n");
-			}
-			else
 			if(choice==0) {
 				break;
 			}

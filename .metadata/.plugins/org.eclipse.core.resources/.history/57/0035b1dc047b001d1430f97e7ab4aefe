@@ -70,7 +70,6 @@ public class Lab1AL {
 				list.remove(sc.next());
 			}else
 			if(choice==5) {
-				
 				System.out.println("\nEnter the value to search :");
 				if(list.contains(sc.next())) {
 					System.out.println("\nYes found!!!");
@@ -83,7 +82,7 @@ public class Lab1AL {
 				System.out.println("\nSize of ArrayList is :"+list.size());
 			}else
 			if(choice==7) {
-				System.out.println("\n");
+				System.out.println("\nSize of ArrayList is :"+list.size());
 			}
 			else
 			if(choice==0) {

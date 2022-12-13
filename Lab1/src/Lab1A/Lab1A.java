@@ -67,12 +67,14 @@ public class Lab1A {
 			}else
 			if(choice==5) {
 				System.out.println("\nEnter the value to search :");
-				if(list.contains(sc.next())) {
-					System.out.println("\nYes found!!!");
-				}else {
-					System.out.println("\nNot found!!!");
-
+				for(Student st:list) {
+					if(st.usn.equals(sc.next())) {
+						System.out.println("\nYes found!!!");
+					}else {
+						System.out.println("\nNot found!!!");
+					}
 				}
+				
 			}else
 			if(choice==6) {
 				System.out.println("\nSize of ArrayList is :"+list.size());
