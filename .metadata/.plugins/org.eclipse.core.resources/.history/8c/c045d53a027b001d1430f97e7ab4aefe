@@ -16,7 +16,7 @@ public class Lab1AL {
 		System.out.println("How many elements do you want to add : ");
 		counter = sc.nextInt();
 		while(i<counter) {
-			System.out.println("Add Elements in order Eid, Name, Department, College "+(i+1));
+			System.out.println("Add Elements in order Eid, Name, Course, College "+(i+1));
 			l.add(new Employee(sc.next(),sc.next(),sc.next(),sc.next()));
 			i++;
 		}

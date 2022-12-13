@@ -1,0 +1,22 @@
+package Lab1A;
+
+class Employee{
+	String eid,name,department,college;
+	
+	Employee(){
+			}
+	//Constructor of student class
+	Employee(String eid, String name, String department, String college){
+		this.eid=eid;
+		this.name=name;
+		this.department=department;
+		this.college=college;
+				}
+	//Displaying the content
+	void displayStudent() {
+		System.out.println("Employee ID : "+this.eid);
+		System.out.println("Name : "+this.name);
+		System.out.println("Department : "+this.department);
+		System.out.println("College : "+this.college);
+	}	
+}

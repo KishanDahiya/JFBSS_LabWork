@@ -13,10 +13,10 @@ public class Lab1AL {
 	public List<Employee> addValues(List<Employee> l){
 		int counter,i = 0;
 		Scanner sc=new Scanner(System.in);
-		System.out.println("How many elements do you want to add : ");
+		System.out.println("How many elements do you want ot add : ");
 		counter = sc.nextInt();
 		while(i<counter) {
-			System.out.println("Add Elements in order Eid, Name, Department, College "+(i+1));
+			System.out.println("Add Elements in order Eid, Name, Course, College "+(i+1));
 			l.add(new Employee(sc.next(),sc.next(),sc.next(),sc.next()));
 			i++;
 		}

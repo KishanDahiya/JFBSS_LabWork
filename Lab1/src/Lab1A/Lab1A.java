@@ -13,7 +13,7 @@ public class Lab1A {
 	public List<Student> addValues(List<Student> l){
 		int counter,i = 0;
 		Scanner sc=new Scanner(System.in);
-		System.out.println("How many elements do you want ot add : ");
+		System.out.println("How many elements do you want to add : ");
 		counter = sc.nextInt();
 		while(i<counter) {
 			System.out.println("Add Elements in order USN,Name, Course, College "+(i+1));

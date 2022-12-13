@@ -4,31 +4,31 @@ import java.util.*;
 public class Lab1AL {
 	
 	//Created the ArrayList and Returned
-	public List<Employee> create(){
-		List<Employee> l=new LinkedList<Employee>();
+	public List<Student> create(){
+		List<Student> l=new ArrayList<Student>();
 		return l;
 	}
 	
 	//Putting in the values
-	public List<Employee> addValues(List<Employee> l){
+	public List<Student> addValues(List<Student> l){
 		int counter,i = 0;
 		Scanner sc=new Scanner(System.in);
-		System.out.println("How many elements do you want to add : ");
+		System.out.println("How many elements do you want ot add : ");
 		counter = sc.nextInt();
 		while(i<counter) {
-			System.out.println("Add Elements in order Eid, Name, Department, College "+(i+1));
-			l.add(new Employee(sc.next(),sc.next(),sc.next(),sc.next()));
+			System.out.println("Add Elements in order USN,Name, Course, College "+(i+1));
+			l.add(new Student(sc.next(),sc.next(),sc.next(),sc.next()));
 			i++;
 		}
 		return l;
 	}
 	
 	//Display elements
-	public void display(List<Employee> l) {
-		Iterator<Employee> itr1=l.iterator();
+	public void display(List<Student> l) {
+		Iterator<Student> itr1=l.iterator();
 		while(itr1.hasNext()) {
-			Employee s2=itr1.next();
-			s2.displayEmployee();
+			Student s2=itr1.next();
+			s2.displayStudent();
 		}
 	}
 	
@@ -40,7 +40,7 @@ public class Lab1AL {
 		Scanner sc=new Scanner(System.in);
 		int choice=0;
 		//Created a list to copy all elements after each operation
-		List<Employee> list=new ArrayList<Employee>();
+		List<Student> list=new ArrayList<Student>();
 		//Menu Driven
 		while(true) {
 			System.out.println("\n1.Create ArrayList\n"
