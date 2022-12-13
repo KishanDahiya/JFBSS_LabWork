@@ -1,0 +1,31 @@
+package Lab1A;
+import java.util.*;
+
+public class Lab1A {
+	
+	//Created the ArrayList and Returned
+	public List<Student> create(){
+		List<Student> l=new ArrayList<Student>();
+		return l;
+	}
+	
+	//Putting in the values
+	public List<Student> addValues(List<Student> l){
+		int counter,i;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("How many elements do you want ot add : ");
+		counter = sc.nextInt();
+		while(i<counter) {
+			l.add(new Studnent(sc.next()))
+		}
+		return l;
+	}
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Created the object");
+
+	}
+
+}

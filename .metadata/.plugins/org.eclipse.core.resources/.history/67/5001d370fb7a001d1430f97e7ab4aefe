@@ -1,0 +1,16 @@
+package Lab1A;
+import
+
+public class Lab1A {
+	
+	public List<Student> create(){
+		List<Student> l=new ArrayList<Student>();
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Created the object");
+
+	}
+
+}

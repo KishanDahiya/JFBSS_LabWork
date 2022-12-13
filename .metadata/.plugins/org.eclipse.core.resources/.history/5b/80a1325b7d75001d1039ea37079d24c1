@@ -1,0 +1,49 @@
+package Lab1A;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class student {
+	
+	String usn="";
+	String name="";
+	String add="";
+
+	student(String usn,String name,String add){
+		this.usn=usn;
+		this.name=name;
+		this.add=add;
+			}
+	
+	public student(List<student> list1) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public displayStudent() {
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<student> list1=new ArrayList<student>();
+		
+		student s1=new student("1RV21MC052","Kishan","Ankola");
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

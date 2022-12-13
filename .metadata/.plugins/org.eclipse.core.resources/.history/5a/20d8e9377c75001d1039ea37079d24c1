@@ -1,0 +1,21 @@
+package Lab1A;
+
+public class student {
+	
+	String usn="";
+	String name="";
+	String add="";
+
+	student(String usn,String name,String add){
+		this.usn=usn;
+		this.name=name;
+		this.add=addd;
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

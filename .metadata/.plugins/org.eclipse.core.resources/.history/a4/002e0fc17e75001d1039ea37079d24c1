@@ -1,0 +1,54 @@
+package Lab1A;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class student {
+	
+	String usn="";
+	String name="";
+	String address="";
+
+	student(String usn,String name,String add){
+		this.usn=usn;
+		this.name=name;
+		this.address=add;
+			}
+	
+	public student(List<student> list1) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public void displayStudent() {
+		System.out.println(usn+name+address));
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<student> list1=new ArrayList<student>();
+		
+		//Adding Student object to collection
+		student s1=new student("1RV21MC052","Kishan","Ankola");
+		list1.add(s1);
+		
+		//Adding Student object to collection 
+		list1.add(new student ("1RV21MC053","Kiran","Bangaluru"));
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

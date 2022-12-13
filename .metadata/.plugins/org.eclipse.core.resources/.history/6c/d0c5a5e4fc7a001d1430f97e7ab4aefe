@@ -1,0 +1,40 @@
+package Lab1A;
+import java.util.*;
+
+public class Lab1A {
+	
+	//Created the ArrayList and Returned
+	public List<Student> create(){
+		List<Student> l=new ArrayList<Student>();
+		return l;
+	}
+	
+	//Putting in the values
+	public List<Student> addValues(List<Student> l){
+		int counter,i = 0;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("How many elements do you want ot add : ");
+		counter = sc.nextInt();
+		while(i<counter) {
+			System.out.println("Add Elements in order USN,Name, Course, College "+(i+1));
+			l.add(new Student(sc.next(),sc.next(),sc.next(),sc.next()));
+			i++;
+		}
+		return l;
+	}
+	
+	//Search element
+	public void display(List<Student> l) {
+		Iterator<student> itr1=list1.iterator();
+		while(itr1.hasNext()) {
+			student s2=itr1.next();
+			s2.displayStudent();
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Created the object");
+
+	}
+
+}
