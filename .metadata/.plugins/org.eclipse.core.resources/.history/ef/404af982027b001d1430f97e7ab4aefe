@@ -6,7 +6,6 @@ public class Lab1AL {
 	//Created the LinkedList and Returned
 	public List<Employee> create(){
 		List<Employee> l=new LinkedList<Employee>();
-		System.out.println("Created the object");
 		return l;
 	}
 	
@@ -35,6 +34,7 @@ public class Lab1AL {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		System.out.println("Created the object");
 		//Created an object to call all methods
 		Lab1A obj=new Lab1A();
 		Scanner sc=new Scanner(System.in);
@@ -43,7 +43,7 @@ public class Lab1AL {
 		List<Employee> list=new LinkedList<Employee>();
 		//Menu Driven
 		while(true) {
-			System.out.println("\n1.Create LinkedList\n"
+			System.out.println("\n1.Create ArrayList\n"
 					+ "2.Insert Values\n"
 					+ "3.Display Values\n"
 					+ "4.Remove Value\n"
@@ -57,7 +57,6 @@ public class Lab1AL {
 					+ "Enter your choice : ");
 			choice=sc.nextInt();
 			if(choice==1) {
-				list.
 				list.addAll(obj.create());
 				}else
 			if(choice==2) {

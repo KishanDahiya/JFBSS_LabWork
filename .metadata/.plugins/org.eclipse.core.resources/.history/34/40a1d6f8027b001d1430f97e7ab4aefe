@@ -7,6 +7,7 @@ public class Lab1AL {
 	public List<Employee> create(){
 		List<Employee> l=new LinkedList<Employee>();
 		System.out.println("Created the object");
+
 		return l;
 	}
 	

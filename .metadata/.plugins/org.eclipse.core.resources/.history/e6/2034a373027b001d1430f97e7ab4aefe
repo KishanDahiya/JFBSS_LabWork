@@ -13,7 +13,7 @@ class Employee{
 		this.address=address;
 				}
 	//Displaying the content
-	void displayEmployee() {
+	void displayEmployee) {
 		System.out.println("Employee ID : "+this.eid);
 		System.out.println("Name : "+this.name);
 		System.out.println("Department : "+this.department);
