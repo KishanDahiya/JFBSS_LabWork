@@ -54,6 +54,7 @@ public class Lab1A {
 			if(choice==1) {
 				list.addAll(obj.create());
 				System.out.println("Created the object");
+
 				}else
 			if(choice==2) {
 				list.addAll(obj.addValues(list));
